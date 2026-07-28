@@ -1,0 +1,294 @@
+/* 🎨 Colores base (puedes cambiarlos fácil) */
+:root {
+  --verde: #4CAF50;
+  --verde-oscuro: #2e7d32;
+  --madera: #8d6e63;
+  --crema: #fff8e1;
+  --naranja: #ce953f;
+}
+
+/* 🌿 Fondo general */
+body {
+  background-color: var(--crema);
+  font-family: "Edu VIC WA NT Hand", cursive;
+  font-optical-sizing: auto;
+  font-weight: <weight>;
+  font-style: normal;
+}
+
+/* 🧺 NAVBAR */
+.navbar {
+  background-color: var(--verde) !important;
+}
+
+.navbar{
+  background: linear-gradient(
+    rgba(0, 0, 0, 0.85),
+    rgba(34, 68, 36, 0.9)
+  ) !important;
+ 
+}
+
+
+.navbar a {
+  color: white !important;
+  font-weight: bold;
+}
+
+/* 🥬 TABLAS */
+.table {
+  background-color: white;
+  border-radius: 10px;
+  overflow: hidden;
+}
+.table thead {
+  background-color: var(--verde);
+  color: white;
+}
+.table-hover tbody tr:hover {
+  background-color: #e8f5e9;
+}
+
+/* 🧾 BADGES (estado productos) */
+.badge {
+  font-size: 0.9rem;
+  padding: 6px 10px;
+  border-radius: 20px;
+}
+
+/* 🧱 CARDS (puestos del mercado) */
+.card {
+  border: none;
+  border-radius: 15px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+.card-title {
+  color: var(--verde-oscuro);
+}
+
+/* 🎠 CAROUSEL */
+.carousel-item img {
+  height: 400px;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+/* ❓ FAQ (accordion) */
+.accordion-button {
+  background-color: var(--verde);
+  color: white;
+}
+.accordion-button:not(.collapsed) {
+  background-color: var(--verde-oscuro);
+}
+.accordion-body {
+  background-color: #f1f8e9;
+}
+
+.accordion-button
+
+/* 🔘 BOTONES */
+.btn-primary {
+  background-color: var(--naranja);
+  border: none;
+}
+.btn-primary:hover {
+  background-color: #e68900;
+}
+
+/* 📦 CONTENEDORES */
+.container {
+  margin-top: 30px;
+}
+
+/* 🧾 LIST GROUP (menú de productos tipo mercado) */
+.list-group-item {
+  background-color: #fff8e1;
+  border: 1px solid #d7ccc8;
+  color: #4e342e;
+  font-weight: 500;
+  transition: all 0.3s ease;
+}
+
+.list-group-item:hover {
+  background-color: #c8e6c9;
+  color: #1b5e20;
+  cursor: pointer;
+}
+
+.list-group-item.active {
+  background-color: var(--verde);
+  border-color: var(--verde-oscuro);
+  color: white;
+}
+
+
+/* 🥕 FORMULARIOS */
+form {
+  background-color: #ffffff;
+  padding: 20px;
+  border-radius: 15px;
+  box-shadow: 0 3px 8px rgba(0,0,0,0.1);
+}
+
+.form-label {
+  font-weight: bold;
+  color: #4e342e;
+}
+
+.form-control {
+  border-radius: 10px;
+  border: 1px solid #c8e6c9;
+}
+
+.form-control:focus {
+  border-color: var(--verde);
+  box-shadow: 0 0 5px rgba(76, 175, 80, 0.5);
+}
+
+
+
+.btn-primary {
+  background: linear-gradient(135deg, #ff9800, #1e6b11);
+  border: none;
+  border-radius: 25px;
+  padding: 12px;
+  font-weight: bold;
+  letter-spacing: 1px;
+  color: white;
+  transition: all 0.3s ease;
+}
+
+/* 🌿 HOVER */
+.btn-primary:hover {
+  background: linear-gradient(135deg, #a7ada7, #0c6410);
+  transform: scale(1.03);
+  box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+}
+
+/* 👆 CLICK */
+.btn-primary:active {
+  transform: scale(0.98);
+  box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+}
+
+/* 🎯 FOCO (accesibilidad) */
+.btn-primary:focus {
+  outline: none;
+  box-shadow: 0 0 0 3px rgba(58, 150, 61, 0.5);
+}
+
+
+/* 🌽 HERO SECTION (Comida fresca) */
+.bg-info {
+  background: linear-gradient(
+    rgba(168, 131, 10, 0.85),
+    rgba(46, 125, 50, 0.9)
+  ) !important;
+  border-radius: 0 0 30px 30px;
+}
+
+.bg-info h1 {
+  font-size: 3rem;
+  font-weight: bold;
+}
+
+.bg-info p {
+  font-size: 1.3rem;
+  font-style: italic;
+}
+
+
+/* 🪵 FOOTER */
+footer {
+  background-color: var(--madera);
+  color: #fff8e1;
+  padding: 30px 0;
+  margin-top: 40px;
+}
+
+footer h5 {
+  color: #ffe0b2;
+}
+
+
+
+footer a:hover {
+  color: #ffcc80;
+}
+
+footer hr {
+  border-color: rgba(255,255,255,0.2);
+}
+
+/* 📅 TEXTO FINAL (copyright) */
+footer p:last-of-type {
+  font-size: 0.9rem;
+  color: #ffe0b2;
+  opacity: 0.8;
+  margin-top: 15px;
+}
+
+/* 📏 Línea divisora más elegante */
+footer hr {
+  width: 60%;
+  margin: 20px auto;
+  border: none;
+  height: 1px;
+  background: linear-gradient(to right, transparent, #ffe0b2, transparent);
+}
+
+/* 🧺 CONTENIDO GENERAL MÁS ORDENADO */
+footer .container {
+  max-width: 600px;
+}
+
+/* 🧾 TÍTULO MÁS PRO */
+footer h5 {
+  font-weight: bold;
+  letter-spacing: 1px;
+  color: #1b5e20;
+}
+
+/* 🍃 DESCRIPCIÓN */
+footer p:first-of-type {
+  font-style: italic;
+  opacity: 0.9;
+}
+
+/* 📅 BARRA FINAL FOOTER */
+footer .bg-secondary {
+  background-color: #1a5c1e !important; /* madera oscura */
+  color: #fff8e1 !important;
+  font-size: 0.9rem;
+  letter-spacing: 0.5px;
+}
+
+/* efecto sutil */
+footer .bg-secondary p,
+footer .bg-secondary {
+  opacity: 0.9;
+}
+/* 🔗 ENLACES FOOTER */
+footer a {
+  color: #ffe0b2;
+  text-decoration: none;
+  transition: all 0.3s ease;
+  font-weight: 500;
+  opacity: 0.8;
+}
+
+/* hover tipo mercado */
+footer a:hover {
+  color: #2e7d32 !important;
+  padding-left: 5px;
+}
+
+/* efecto activo */
+footer a:active {
+  color: #ff9800 !important;
+}
+
+footer ul li {
+  margin-bottom: 8px;
+}

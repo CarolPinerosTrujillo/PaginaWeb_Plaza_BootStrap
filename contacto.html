@@ -1,48 +1,149 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sabores de la plaza</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
-</head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sabores de la plaza</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Edu+VIC+WA+NT+Hand:wght@400..700&display=swap" rel="stylesheet">
+
+
+<link rel="stylesheet" href="styles.css">
+  </head>
+
 <body>
 
-<nav class="navbar navbar-expand-lg bg-body-tertiary">
-  <div class="container-fluid">
-    <a class="navbar-brand" href="#">Sabores de mi tierra</a>
-    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
-    </button>
-    <div class="collapse navbar-collapse" id="navbarText">
-      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-        <li class="nav-item">
-          <a class="nav-link active" aria-current="page"    href="#">Inicio</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="./productos.html">Productos</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="./contacto.html">Contactenos</a>
-        </li>
-      </ul>
-      <span class="navbar-text">
-        Siguenos en facebook 
-      </span>
+  <nav class="navbar navbar-expand-lg bg-body-tertiary">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#">Sabores de mi tierra</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarText"
+        aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarText">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="./index.html">Inicio</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="./productos.html">Productos</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="./contacto.html">Contactenos</a>
+          </li>
+        </ul>
+        <span class="navbar-text">
+          Siguenos en facebook
+        </span>
+      </div>
+    </div>
+  </nav>
+
+
+  <section class="bg-info text-white text-center p-5">
+    <h1>Comida fresca</h1>
+    <p>Directo de la plaza</p>
+    <!-- <a class="btn btn-primary">Ver productos</a> -->
+  </section>
+
+  <div class="container py-5">
+    <div class="row justify-content-center">
+      <div class="col-12 col-md-8 col-lg-6">
+
+
+        <form>
+          <!-- Nombre -->
+          <div class="mb-3">
+            <label for="nombre" class="form-label">Nombre</label>
+            <input type="text" id="nombre" class="form-control" required>
+          </div>
+
+          <!-- Email -->
+          <div class="mb-3">
+            <label for="correo" class="form-label">Correo</label>
+            <input type="email" id="correo" class="form-control" required>
+          </div>
+
+          <!-- Teléfono -->
+          <div class="mb-3">
+            <label for="telefono" class="form-label">Teléfono</label>
+            <input type="tel" id="telefono" class="form-control">
+          </div>
+
+
+          <div class="mb-3">
+            <label for="puesto" class="form-label">Puesto de interés</label>
+            <select id="puesto" class="form-select">
+              <option>Frutas</option>
+              <option>Panadería</option>
+              <option>Café</option>
+            </select>
+          </div>
+
+          <div class="mb-3">
+            <label for="mensaje" class="form-label">Mensaje</label>
+            <textarea id="mensaje" class="form-control" rows="4"></textarea>
+          </div>
+
+          <button type="submit" class="btn btn-primary w-100">
+            Enviar
+          </button>
+        </form>
+
+      </div>
     </div>
   </div>
-</nav>
-
-
-<section class="bg-dark text-white text-center p-5">
-  <h1>Comida fresca</h1>
-  <p>Directo de la plaza</p>
-  <!-- <a class="btn btn-primary">Ver productos</a> -->
-</section>
 
 
 
 
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+  <footer class="bg-info text-center text-lg-start mt-5">
+    <div class="container p-4">
+      <div class="row">
+
+
+        <div class="col-lg-6 col-md-12 mb-4">
+          <h5 class="text-uppercase">Sabores de mi tierra</h5>
+          <p>
+            Comida fresca, local y hecha con amor.
+          </p>
+        </div>
+
+
+        <div class="col-lg-3 col-md-6 mb-4">
+          <h5 class="text-uppercase">Enlaces</h5>
+          <ul class="list-unstyled">
+            <li><a href="./index.html" >Inicio</a></li>
+            <li><a href="./productos.html" >Productos</a></li>
+            <li><a href="./contacto.html" >Contacto</a></li>
+          </ul>
+        </div>
+
+
+        <div class="col-lg-3 col-md-6 mb-4">
+          <h5 class="text-uppercase">Redes</h5>
+          <p>Síguenos en Facebook</p>
+        </div>
+
+      </div>
+    </div>
+
+    <div class="text-center p-3 bg-secondary text-white">
+      © 2026 Sabores de mi plaza
+    </div>
+  </footer>
+
+
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+    crossorigin="anonymous"></script>
 </body>
+
 </html>
